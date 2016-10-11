@@ -11878,7 +11878,20 @@ a.anchor-link {
 <h1 id="&#21069;&#22238;&#65288;&#20998;&#39006;&#31934;&#24230;&#12398;&#35413;&#20385;&#12395;&#12388;&#12356;&#12390;&#65289;&#12398;&#12354;&#12425;&#12377;&#12376;">&#21069;&#22238;&#65288;&#20998;&#39006;&#31934;&#24230;&#12398;&#35413;&#20385;&#12395;&#12388;&#12356;&#12390;&#65289;&#12398;&#12354;&#12425;&#12377;&#12376;<a class="anchor-link" href="#&#21069;&#22238;&#65288;&#20998;&#39006;&#31934;&#24230;&#12398;&#35413;&#20385;&#12395;&#12388;&#12356;&#12390;&#65289;&#12398;&#12354;&#12425;&#12377;&#12376;">&#182;</a></h1>
 </div>
 </div>
-</div></section><section>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※前回「分類精度の評価について」というタイトルで少し発表しました。今日はその続きです。<br>
+※前回参加されていない方もいらっしゃるので、かいつまんで前回話したことをまず紹介します。</p>
+
+</div>
+</div>
+</div>
+</aside></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -11894,7 +11907,19 @@ a.anchor-link {
 
 </div>
 </div>
-</div></section><section>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※前回、こんな問題を考えました。</p>
+
+</div>
+</div>
+</div>
+</aside></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -11919,7 +11944,8 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>※ うち3個が安全なキノコ、2個が毒キノコだった</p>
+<p>※安全なキノコは10個中4個、残りの6個は毒キノコ。<br>
+※5個のキノコを選んだけれど、そのうち3個が安全なキノコ、2個が毒キノコだった。</p>
 
 </div>
 </div>
@@ -11945,7 +11971,19 @@ a.anchor-link {
 
 </div>
 </div>
-</div></section><section>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※所謂クロス集計表ですね。</p>
+
+</div>
+</div>
+</div>
+</aside></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12414,7 +12452,19 @@ $$
 <h1 id="&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;2">&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;2<a class="anchor-link" href="#&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;2">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment">
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※いよいよここからが、今日の本題です。</p>
+
+</div>
+</div>
+</div>
+</aside><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12459,7 +12509,21 @@ $$
 </table>
 </div>
 </div>
-</div></div></section></section><section><section>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※選んだ人は、「たぶん金銀銅どのメダルも10個ずつだろう」と（勝手に）予想して仕分け（分類）した。<br>
+※実際には、金メダル＝8個、銀メダル＝9個、銅メダル＝13個だった。<br>
+※その内訳が、この表。</p>
+
+</div>
+</div>
+</div>
+</aside></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12468,7 +12532,48 @@ $$
 <h2 id="TP,-FP,-FN,-TN">TP, FP, FN, TN<a class="anchor-link" href="#TP,-FP,-FN,-TN">&#182;</a></h2>
 </div>
 </div>
-</div></section><section>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+<tr>
+<th style="text-align:center;background:#eee">&nbsp;</th><th style="text-align:center;background:#dde">+</th><th style="text-align:center;background:#edd">-</th>
+</tr>
+<tr>
+<th style="text-align:center;background:#cce">(+)</th><td style="text-align:center;background:#bbe">TP</td><td style="text-align:center;background:#cbd">FP</td>
+</tr>
+<tr>
+<th style="text-align:center;background:#ecc">(-)</th><td style="text-align:center;background:#dbc">FN</td><td style="text-align:center;background:#ebb">TN</td>
+</tr>
+</table>
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※TP, FP, FN, TN って、こんな感じの表でしたよね？<br>
+※どのように考えれば良いのでしょう？</p>
+
+</div>
+</div>
+</div>
+</aside></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align:center">？</p>
+</div>
+</div>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12951,7 +13056,21 @@ $$
 </table>
 </div>
 </div>
-</div></div></section></section><section><section>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※見付けた「たぶんライオン」は10匹だった。<br>
+※でも実際にはライオンは16匹いた。<br>
+※しかもそのうち見付けたライオンは7匹しかいなかった。</p>
+
+</div>
+</div>
+</div>
+</aside></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -13030,32 +13149,29 @@ $$
 $$
 </div>
 </div>
-</div><aside class="notes">
-
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>※ TN が算出できないので、正解率（Accuracy）は計算できない。<br>
-※ でも 適合率・再現率・F-値 が計算できるから、十分だよね！</p>
-
+<h3 id="Point">Point<a class="anchor-link" href="#Point">&#182;</a></h3>
 </div>
 </div>
 </div>
-</aside><aside class="notes">
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Point">Point<a class="anchor-link" href="#Point">&#182;</a></h3><p>（編集中）</p>
+<ul>
+<li>TN が算出できないので、正解率（Accuracy）は計算できない。</li>
+<li>でも（TNが計算に関係しない）適合率・再現率・F-値 は計算できる（これらだけで十分！）</li>
+</ul>
 
 </div>
 </div>
-</div>
-</aside></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
