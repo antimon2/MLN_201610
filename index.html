@@ -12438,7 +12438,8 @@ $$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>※ F-値は実際には元の定義のように precison と recall から計算することが多い。</p>
+<p>※F-値は実際には元の定義のように precison と recall から計算することが多い。<br>
+※↑よりも、「正解率以外（適合率・再現率・F-値）は、TP/FP/FN のみから算出できる」という事実の方が重要！（後述）</p>
 
 </div>
 </div>
@@ -12452,19 +12453,7 @@ $$
 <h1 id="&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;2">&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;2<a class="anchor-link" href="#&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;2">&#182;</a></h1>
 </div>
 </div>
-</div><aside class="notes">
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>※いよいよここからが、今日の本題です。</p>
-
-</div>
-</div>
-</div>
-</aside><div class="fragment">
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -13002,7 +12991,19 @@ $$
 <h1 id="&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;3">&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;3<a class="anchor-link" href="#&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;3">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment">
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※いよいよここからが、今日の本題です。</p>
+
+</div>
+</div>
+</div>
+</aside><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -13149,13 +13150,13 @@ $$
 $$
 </div>
 </div>
-</div></div></section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Point">Point<a class="anchor-link" href="#Point">&#182;</a></h3>
+<h2 id="Point">Point<a class="anchor-link" href="#Point">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13171,48 +13172,6 @@ $$
 
 </div>
 </div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;4">&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;4<a class="anchor-link" href="#&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;4">&#182;</a></h1>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>というか、<strong>シチュエーションその3＋α</strong></p>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>サバンナの湿地帯に迷い込んだ。ライオンとワニが隠れている。</li>
-<li>ライオンもワニもいっぱいいるが、全部で何頭/何匹いるかは分からない。</li>
-<li>ライオンもワニも見つけ出したい（見つけたライオンやワニを避けて通り過ぎたい）。</li>
-</ul>
-
-</div>
-</div>
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#12418;&#12358;&#12362;&#20998;&#12363;&#12426;&#12391;&#12377;&#12397;&#65311;">&#12418;&#12358;&#12362;&#20998;&#12363;&#12426;&#12391;&#12377;&#12397;&#65311;<a class="anchor-link" href="#&#12418;&#12358;&#12362;&#20998;&#12363;&#12426;&#12391;&#12377;&#12397;&#65311;">&#182;</a></h2>
-</div>
-</div>
 </div><aside class="notes">
 
 <div class="cell border-box-sizing text_cell rendered">
@@ -13220,8 +13179,7 @@ $$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>※そう。「多クラス分類」の指標（の計算方法）を「検出」に応用すれば良い。それだけ。<br>
-※もちろん「検出」なので TN は計算できません。つまり <strong>平均適合率</strong>、<strong>平均再現率</strong>、<strong>平均F-値</strong>だけ、ということ。</p>
+<p>※（再）検出タスクでは、TNはカウントアップできないことに注意！（ターゲットが不定なので）</p>
 
 </div>
 </div>
@@ -13232,7 +13190,235 @@ $$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#21442;&#32771;">&#21442;&#32771;<a class="anchor-link" href="#&#21442;&#32771;">&#182;</a></h2>
+<h3 id="&#12371;&#12371;&#12391;&#12289;&#20808;&#12411;&#12393;&#12414;&#12391;&#12392;&#23569;&#12375;&#36949;&#12358;&#35251;&#28857;&#12398;&#12362;&#35441;&#12434;&#12375;&#12414;&#12377;&#12290;">&#12371;&#12371;&#12391;&#12289;&#20808;&#12411;&#12393;&#12414;&#12391;&#12392;&#23569;&#12375;&#36949;&#12358;&#35251;&#28857;&#12398;&#12362;&#35441;&#12434;&#12375;&#12414;&#12377;&#12290;<a class="anchor-link" href="#&#12371;&#12371;&#12391;&#12289;&#20808;&#12411;&#12393;&#12414;&#12391;&#12392;&#23569;&#12375;&#36949;&#12358;&#35251;&#28857;&#12398;&#12362;&#35441;&#12434;&#12375;&#12414;&#12377;&#12290;">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※私たちはまだライオンがウヨウヨいるサバンナにいます。</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Q. あなたがしたいことは、どちらに近いですか？<ul>
+<li>A1. <strong>できる限り安全に</strong>ここを抜け出したい。</li>
+<li>A2. <strong>多少のケガは覚悟でとにかく</strong>ここを抜け出したい。</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="A1.-&#12391;&#12365;&#12427;&#38480;&#12426;&#23433;&#20840;&#12395;&#12371;&#12371;&#12434;&#25244;&#12369;&#20986;&#12375;&#12383;&#12356;&#12290;">A1. &#12391;&#12365;&#12427;&#38480;&#12426;&#23433;&#20840;&#12395;&#12371;&#12371;&#12434;&#25244;&#12369;&#20986;&#12375;&#12383;&#12356;&#12290;<a class="anchor-link" href="#A1.-&#12391;&#12365;&#12427;&#38480;&#12426;&#23433;&#20840;&#12395;&#12371;&#12371;&#12434;&#25244;&#12369;&#20986;&#12375;&#12383;&#12356;&#12290;">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>（＝「ここにはライオンいない」という箇所を見付けて確実に少しずつ歩いて行けば良さげ？）</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>＝ 「大丈夫だと思ったところにライオンがいた！」という状況には遭いたくない。</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>＝ 「ライオンを見つけ出す」という作業に対して <strong>漏れ</strong>（＝検出漏れ）を少なくしたい。</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align:center">↓</p>
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>銃を持っていて、銃弾が十分にあれば、とにかく <strong>あらゆる方向に撃ちまくれば良い</strong>。<ul>
+<li><strong>外れ弾</strong>（ライオン以外を撃ってしまう）は多くなるかもしれない。</li>
+<li><strong>撃ち漏らし</strong> （ライオンを撃ち損なう）はきっと少なくなる！</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align:center">↑</p><ul>
+<li>外れ弾（＝<strong>FP</strong>）が多くなる ＝ <strong>適合率</strong> が下がる。</li>
+<li>撃ち漏らし （＝<strong>FN</strong>）が少なくなる ＝ <strong>再現率</strong> が上がる！</li>
+</ul>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align:center"><big><b>「できる限り安全に！」⇔「再現率を上げろ！」</b></big></p>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="A2.-&#22810;&#23569;&#12398;&#12465;&#12460;&#12399;&#35226;&#24735;&#12391;&#12289;&#12392;&#12395;&#12363;&#12367;&#12371;&#12371;&#12434;&#25244;&#12369;&#20986;&#12375;&#12383;&#12356;&#12290;">A2. &#22810;&#23569;&#12398;&#12465;&#12460;&#12399;&#35226;&#24735;&#12391;&#12289;&#12392;&#12395;&#12363;&#12367;&#12371;&#12371;&#12434;&#25244;&#12369;&#20986;&#12375;&#12383;&#12356;&#12290;<a class="anchor-link" href="#A2.-&#22810;&#23569;&#12398;&#12465;&#12460;&#12399;&#35226;&#24735;&#12391;&#12289;&#12392;&#12395;&#12363;&#12367;&#12371;&#12371;&#12434;&#25244;&#12369;&#20986;&#12375;&#12383;&#12356;&#12290;">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>（＝「とにかく方向決めてまっすぐ突っ切る」ことでこの場を抜け出せば良さげ？）</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>＝ 「気がついたら目の前にライオンがいた！」という状況だけには遭いたくない。</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>＝ 「ライオンを見つけ出す」という <strong>見極め</strong> だけはしっかりしたい。</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align:center">↓</p>
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>銃を持っているなら、例えば進む方向を決めて、<strong>その方向にいるライオンだけを確実に撃てば良い</strong>。<ul>
+<li><strong>撃ち漏らし</strong> （ライオンを撃ち損なう）は多くなるかもしれない。</li>
+<li><strong>外れ弾</strong>（ライオン以外を撃ってしまう）はきっと少なくなる！</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※「撃ち漏らし」が多くなる理由：だって進行方向のライオンしか狙ってないですから。横や背後のライオン気にしてないですから。</p>
+
+</div>
+</div>
+</div>
+</aside><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align:center">↑</p><ul>
+<li>撃ち漏らし （＝<strong>FN</strong>）が多くなる ＝ <strong>再現率</strong> が下がる。</li>
+<li>外れ弾（＝<strong>FP</strong>）が少なくなる ＝ <strong>適合率</strong> が上がる！</li>
+</ul>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align:center"><big><b>「多少の危険は覚悟で！」⇔「適合率を上げろ！」</b></big></p>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#12414;&#12392;&#12417;">&#12414;&#12392;&#12417;<a class="anchor-link" href="#&#12414;&#12392;&#12417;">&#182;</a></h1>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#12414;&#12392;&#12417;1:-&#12456;&#12531;&#12472;&#12491;&#12450;&#12398;&#30342;&#12373;&#12435;&#12408;">&#12414;&#12392;&#12417;1: &#12456;&#12531;&#12472;&#12491;&#12450;&#12398;&#30342;&#12373;&#12435;&#12408;<a class="anchor-link" href="#&#12414;&#12392;&#12417;1:-&#12456;&#12531;&#12472;&#12491;&#12450;&#12398;&#30342;&#12373;&#12435;&#12408;">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13242,12 +13428,82 @@ $$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><a href="http://atour.iro.umontreal.ca/rali/sites/default/files/publis/SokolovaLapalme-JIPM09.pdf">A systematic analysis of performance measures for classification tasks</a> (PDF)</li>
+<li>「精度を上げよう」と考えたとき、<strong>適合率</strong> や <strong>再現率</strong>（および <strong>F-値</strong>）を気にするようにしましょう。<br>
+（場合によってはそもそも <em>正解率</em> を算出できない）</li>
+<li>「適合率を上げるにはどうすれば良いか」「再現率を上げるにはどうすれば良いか」のノウハウ・実績を積みましょう。</li>
 </ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※ここでいう「エンジニア」は、機械学習で実際にモデルを構築するお仕事をする人たちを想定しています。</p>
+
+</div>
+</div>
+</div>
+</aside></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#12414;&#12392;&#12417;2:-&#12463;&#12521;&#12452;&#12450;&#12531;&#12488;&#12398;&#30342;&#12373;&#12435;&#12408;">&#12414;&#12392;&#12417;2: &#12463;&#12521;&#12452;&#12450;&#12531;&#12488;&#12398;&#30342;&#12373;&#12435;&#12408;<a class="anchor-link" href="#&#12414;&#12392;&#12417;2:-&#12463;&#12521;&#12452;&#12450;&#12531;&#12488;&#12398;&#30342;&#12373;&#12435;&#12408;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>自分が欲している「精度」が、<strong>適合率</strong> なのか <strong>再現率</strong> なのかを把握しましょう。<br>
+（さきほどの「ライオンのサバンナ」のメタファーを思い出しましょう）</li>
+<li>そしてそれを <strong>エンジニアに明確に伝える</strong> ようにしましょう（重要）。</li>
+</ul>
+
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※ここでいう「クライアント」は、エンジニアに機械学習で認識や検出等のお仕事を依頼する方々を想定しています。</p>
+
+</div>
+</div>
+</div>
+</aside></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#12414;&#12392;&#12417;3">&#12414;&#12392;&#12417;3<a class="anchor-link" href="#&#12414;&#12392;&#12417;3">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><strong>適合率</strong>、<strong>再現率</strong> を、エンジニア・クライアント の共通概念にしましょう。</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -13306,6 +13562,92 @@ $$
 </div>
 </div>
 
+</div>
+</aside></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align:center">おまけ</p>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;4">&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;4<a class="anchor-link" href="#&#12471;&#12481;&#12517;&#12456;&#12540;&#12471;&#12519;&#12531;&#12381;&#12398;4">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>というか、<strong>シチュエーションその3＋α</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>サバンナの湿地帯に迷い込んだ。ライオンとワニが隠れている。</li>
+<li>ライオンもワニもいっぱいいるが、全部で何頭/何匹いるかは分からない。</li>
+<li>ライオンもワニも見つけ出したい（見つけたライオンやワニを避けて通り過ぎたい）。</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#12418;&#12358;&#12362;&#20998;&#12363;&#12426;&#12391;&#12377;&#12397;&#65311;">&#12418;&#12358;&#12362;&#20998;&#12363;&#12426;&#12391;&#12377;&#12397;&#65311;<a class="anchor-link" href="#&#12418;&#12358;&#12362;&#20998;&#12363;&#12426;&#12391;&#12377;&#12397;&#65311;">&#182;</a></h3>
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※そう。「多クラス分類」の指標（の計算方法）を「検出」に応用すれば良い。それだけ。<br>
+※もちろん「検出」なので TN は計算できません。つまり <strong>平均適合率</strong>、<strong>平均再現率</strong>、<strong>平均F-値</strong>だけ、ということ。<br>
+※ということで、混同行列その他は宿題にして、ここでは省略。</p>
+
+</div>
+</div>
+</div>
+</aside></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p style="text-align:center">おしまい</p>
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※今度こそ本当におしまい。</p>
+
+</div>
+</div>
 </div>
 </aside></section></section>
 </div>
